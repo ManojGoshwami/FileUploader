@@ -1,0 +1,220 @@
+<resources>
+    <string name="app_name">UKImgApp</string>
+    <string name="sync_title">Sync</string>
+    <string name="map_api_key">AIzaSyCEWdMwT2X8TPyXcjNUzj-rAOSLwFzSZ_Y</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="floor_count">Total Floors:</string>
+    <string name="floor_name">Floor Name*</string>
+    <string name="floor_covered_area">Super Built Up Area/ Floor Covered Area (sq.ft.)*</string>
+    <string name="floor_vacant_area">Floor Vacant Area (sq.ft.)</string>
+    <string name="property_type">Property Type*</string>
+    <string name="open_plot">Open Plot</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="add_floor_btn">Add Floor</string>
+    <string name="used_for_defecation">Used For Defecation</string>
+    <string name="property_use">Property Use*</string>
+    <string name="non_residential_property_type">Non Residential Property Category</string>
+    <string name="non_residential_property_use">Non Residential Property Sub Category</string>
+    <string name="ownership_type">Ownership Type*</string>
+    <string name="sub_ownership_type">Sub Ownership Type*</string>
+    <string name="floor_occupier">Floor Occupier*</string>
+    <string name="floor_institution_type">Institution Type</string>
+    <string name="floor_institution_name">Institution Name private or goverment</string>
+    <string name="self">Self</string>
+    <string name="unoccupied">Unoccupied</string>
+    <string name="rented">Rented</string>
+    <string name="occupancy_date">Occupancy Date</string>
+    <string name="floor_construction_type">Floor Construction Type*</string>
+    <string name="floor_construction_year">Floor Year Of Construction</string>
+    <string name="floor_number">No of floors</string>
+    <string name="rate_of_construction">Rate Of Construction</string>
+    <string name="total_no_of_floor">Total No. of Floors</string>
+    <string-array name="ulb_list">
+        <item>Select</item>
+        <item>HRD</item>
+        <item>DHR</item>
+        <item>RDP</item>
+        <item>HLD</item>
+    </string-array>
+    <string-array name="floor_name_array">
+        <item>Select</item>
+        <item>GF</item>
+        <item>1F</item>
+        <item>2F</item>
+        <item>3F</item>
+        <item>4F</item>
+        <item>5F</item>
+        <item>6F</item>
+        <item>7F</item>
+        <item>8F</item>
+        <item>9F</item>
+        <item>10F</item>
+        <item>B1</item>
+        <item>B2</item>
+        <item>B3</item>
+        <item>B4</item>
+        <item>B5</item>
+    </string-array>
+    <array name="property_type_array">
+        <item>Select</item>
+        <item>Flat/Part of building</item>
+        <item>Independent House</item>
+    </array>
+    <array name="property_use_array">
+        <item>Select</item>
+        <item>Mixed</item>
+        <item>Non-Residential</item>
+        <item>Residential</item>
+
+    </array>
+    <array name="non_residential_array">
+        <item>Select</item>
+        <item>Hotel/PG/Pub/Restaurent/Bar/Club/Dharamshala/Ashram</item>
+        <item>Malls</item>
+        <item>All commercial showrooms, Banks , office, Coaching and training centers, ATM</item>
+        <item>Shops/ Dhabas/ Stall</item>
+        <item>Health Services</item>
+        <item>Sports center, Gym, Public health centres, Fitness centers, Entertainment centers,
+            Theaters, cinema halls
+        </item>
+        <item>Educational Institutions</item>
+        <item>Petrol Pump Gas agency depot</item>
+        <item>Community Centers, wedding house, wedding point, kalyan mandap, ware house, godown,
+            club,etc
+        </item>
+        <item>Bhwan with Mobile towers, establishment of state and central government office -
+            Commercial,business,financial
+        </item>
+        <item>Industrial Units</item>
+        <item>Other non residential property other than above all categories</item>
+    </array>
+    <array name="hotel_array">
+        <item>Select</item>
+        <item>Hotel,Paying Guest House upto 10 rooms (without AC)</item>
+        <item>Hotel more than 10 rooms (without AC)</item>
+        <item>All Hotel / Paying Guest House (AC) 3 star facility</item>
+        <item>4 Star Hotels and more, Pub, Restaurent with BAR and Club with BAR</item>
+        <item>Religious Dharmshala/Ashram/ Hotel upto rent Rs.200/- per day or Commmercial
+            electricty connection
+        </item>
+    </array>
+    <array name="health_array">
+        <item>Select</item>
+        <item>Clinic ( only OPD)</item>
+        <item>Hospital / Nurshing Home/ Polyclinic/ Diagnostic Center, Medical Store, Pathology,
+            Medical centers, etc
+        </item>
+    </array>
+    <array name="educational_array">
+        <item>Select</item>
+        <item>Schools without hostels and study centers ( except State government )</item>
+        <item>Schools colleges and education centers with hostel facility( except State
+            government)
+        </item>
+    </array>
+    <array name="industrial_array">
+        <item>Select</item>
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </array>
+    <array name="non_res_category_array">
+        <item>1</item>
+        <item>11</item>
+        <item>9</item>
+        <item>10</item>
+        <item>14</item>
+    </array>
+    <array name="hotel_cat_id_array">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </array>
+    <array name="shop_cat_id_array">
+        <item>Select</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </array>
+    <array name="health_cat_id_array">
+        <item>Select</item>
+        <item>105</item>
+        <item>106</item>
+        <item>107</item>
+    </array>
+    <array name="education_id_array">
+        <item>Select</item>
+        <item>108</item>
+        <item>109</item>
+    </array>
+    <array name="industrial_cat_array">
+        <item>Select</item>
+        <item>114</item>
+        <item>115</item>
+        <item>116</item>
+    </array>
+    <array name="shop_dhaba_array">
+        <item>Select</item>
+        <item>Upto 100 sqfts</item>
+        <item>More than 100 sqfts and upto 200 sqfts</item>
+        <item>More than 200 sqfts and upto 500 sqfts</item>
+        <item>More than 500 sqfts</item>
+        <item>Completely necessary services ( Milk, Vegetables, Barber, Shoe Maker, Cycle/Rickshaw,
+            mechanic)
+        </item>
+    </array>
+    <array name="ownership_type_array">
+        <item>Select</item>
+        <item>Single Owner</item>
+        <item>Multiple Owners</item>
+        <item>Institutional-Private</item>
+        <item>Institutional-Government</item>
+        <item>Slum-Basti</item>
+        <!-- <item>Central Government</item>
+        <item>State Government</item>
+        <item>Ex-Army</item>
+        <item>Army</item>
+        <item>Basti</item>-->
+    </array>
+    <array name="institution_type_array">
+        <item>Select</item>
+        <item>Proprietorship</item>
+        <item>Partnership firm</item>
+        <item>State governement</item>
+        <item>Central government</item>
+    </array>
+    <array name="sub_ownership_type_array">
+        <item>Select</item>
+        <item>Single Owner</item>
+        <item>Multiple Owner</item>
+        <item>Proprietorship</item>
+        <item>Partnership Firm</item>
+        <item>Limited Liability Partnership</item>
+        <item>Private Limited Company</item>
+        <item>Public Limited Company</item>
+        <item>Section 8 Company</item>
+        <item>Housing Society</item>
+        <item>Self Help Group</item>
+        <item>Private Trust</item>
+        <item>Public Trust</item>
+        <item>Religious Trust</item>
+        <item>State Government</item>
+        <item>Central Government</item>
+        <item>Urban Local Government</item>
+        <item>Rural Local Government</item>
+
+    </array>
+    <array name="floor_construction_type_array">
+        <item>Select</item>
+        <item>Pucca Building With R.C.C. Roof or R.B. Roof</item>
+        <item>Any Other Pucca Building</item>
+        <item>.Kachacha building i.e. all other building not covered in clauses (a) and (b)</item>
+    </array>
+
+</resources>

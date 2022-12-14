@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="768dp" android:width="1366dp" android:viewportWidth="1366" android:viewportHeight="768">
+    <group>
+        <clip-path android:pathData="M0,0h1366v768h-1366z M 0,0"/>
+        <path android:fillColor="@color/white" android:pathData="M0,0h1366v768h-1366z"/>
+        <path android:fillColor="@color/colorPrimary" android:pathData="M-48.8,531.2s275.2,-134.4 563.6,44.05S891.46,751.81 1094.02,712.58 1382,693.47 1382,693.47L1382,843.12L-38,843.12Z" android:strokeAlpha="0.47" android:fillAlpha="0.47"/>
+        <path android:fillColor="@color/colorPrimary" android:pathData="M-27,548.8S186.2,425.32 509.6,600s392.86,148.59 595.42,107.98S1393,688.2 1393,688.2v154.92L-27,843.12Z"/>
+        <path android:fillColor="@color/colorPrimary" android:pathData="M-27,573.9s194.2,-119.5 515.8,43.7 413.66,129.06 616.22,89.84S1393,688.33 1393,688.33L1393,894.6L-27,894.6Z" android:strokeAlpha="0.47" android:fillAlpha="0.47"/>
+        <path android:fillColor="#eeeff0" android:pathData="M0,758h1366v10h-1366z"/>
+        <path android:fillColor="#eeeff0" android:pathData="M0,755h1366v3h-1366z"/>
+    </group>
+</vector>

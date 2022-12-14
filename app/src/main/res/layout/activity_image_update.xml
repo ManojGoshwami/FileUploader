@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ImageUpdateActivity">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/tool_bar_layout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_text_input"
+        style="@style/TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_50dp"
+        android:layout_below="@id/top"
+        android:layout_margin="@dimen/activity_margin_10dp"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Enter UID"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtUID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="7"
+            android:text=""
+            android:textColor="@color/color_1B1B47"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size_16sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/imgRecycler"
+         android:padding="@dimen/activity_margin_3dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/edtUID" />-->
+    <FrameLayout
+        android:id="@+id/layoutImg"
+        android:layout_width="210dp"
+        android:layout_height="@dimen/activity_margin_200dp"
+        android:layout_below="@id/edt_text_input"
+        android:layout_marginLeft="5dp"
+        android:padding="@dimen/activity_margin_5dp"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/activity_margin_15dp">
+
+            <ImageView
+                android:id="@+id/propImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher_background" />
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/btnRemoveImg"
+            android:layout_width="@dimen/activity_margin_25dp"
+            android:layout_height="@dimen/activity_margin_25dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_cancel_icon" />
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/activity_margin_20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/btnClick"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_margin_3dp"
+            android:layout_weight=".5"
+            android:background="@null"
+            android:gravity="center"
+            android:src="@drawable/ic_camera"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btnUpload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_margin_3dp"
+            android:layout_weight=".5"
+            android:background="@null"
+            android:gravity="center"
+            android:src="@drawable/ic_sync_icon"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+    </LinearLayout>
+</RelativeLayout>

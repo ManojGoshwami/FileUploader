@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_90dp">
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sb_log"
+            tools:ignore="ImageContrastCheck" />
+
+        <Button
+            android:id="@+id/btnLogOut"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/activity_margin_30dp"
+            android:layout_alignBottom="@+id/bg"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/activity_margin_20dp"
+            android:layout_marginBottom="@dimen/activity_margin_35dp"
+            android:background="@drawable/btn_logout"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:padding="@dimen/activity_margin_5dp"
+            android:text="Log Out"
+            android:textAllCaps="false"
+            android:textColor="@drawable/txt_select"
+            android:textSize="@dimen/text_size_13sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin_20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/lyt_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_20dp"
+            android:layout_marginBottom="@dimen/activity_margin_10dp"
+            android:background="@drawable/lyt_rounded"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_margin_20dp">
+
+            <ImageView
+                android:layout_width="@dimen/activity_margin_50dp"
+                android:layout_height="@dimen/activity_margin_50dp"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_update_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Update Image"
+                    android:textColor="@color/color_1B1B47"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_3dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Click here for update image"
+                    android:textColor="@color/color_0F2C52"
+                    android:textSize="@dimen/text_size_13sp" />
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="@dimen/activity_margin_30dp"
+                android:layout_height="@dimen/activity_margin_30dp"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_circle_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyt_floor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_10dp"
+            android:layout_marginBottom="@dimen/activity_margin_10dp"
+            android:background="@drawable/lyt_rounded"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_margin_20dp">
+
+            <ImageView
+                android:layout_width="@dimen/activity_margin_50dp"
+                android:layout_height="@dimen/activity_margin_50dp"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:src="@drawable/property" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Update Floor"
+                    android:textColor="@color/color_1B1B47"
+                    android:textSize="@dimen/text_size_14sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_3dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Click here to update floor"
+                    android:textColor="@color/color_0F2C52"
+                    android:textSize="@dimen/text_size_13sp" />
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="@dimen/activity_margin_30dp"
+                android:layout_height="@dimen/activity_margin_30dp"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_circle_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyt_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lyt_rounded"
+            android:layout_marginTop="@dimen/activity_margin_10dp"
+            android:layout_marginBottom="@dimen/activity_margin_10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edtHomeUID"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_margin_50dp"
+                    android:layout_marginStart="@dimen/activity_margin_10dp"
+                    android:layout_marginTop="@dimen/activity_margin_10dp"
+                    android:layout_marginEnd="@dimen/activity_margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/activity_margin_10dp"
+                    android:gravity="center"
+                    android:hint="Enter UID"
+                    android:background="@color/white"
+                    android:textColorHint="@color/black"
+                    android:inputType="number"
+                    android:maxLength="7"
+                    android:textSize="@dimen/text_size_16sp" />
+                <Spinner
+                    android:id="@+id/ulb_drop_spinner"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:entries="@array/ulb_list"
+                    android:backgroundTint="@color/colorPrimary"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_margin_20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/activity_margin_50dp"
+                    android:layout_height="@dimen/activity_margin_50dp"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_loc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Update Location"
+                        android:textColor="@color/color_1B1B47"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_margin_3dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Click here to update location"
+                        android:textColor="@color/color_0F2C52"
+                        android:textSize="@dimen/text_size_13sp" />
+
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/imgLocationArrow"
+                    android:layout_width="@dimen/activity_margin_30dp"
+                    android:layout_height="@dimen/activity_margin_30dp"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_circle_arrow" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

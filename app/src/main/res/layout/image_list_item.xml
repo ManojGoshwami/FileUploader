@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgFile"
+        android:layout_width="@dimen/activity_margin_120dp"
+        android:layout_height="@dimen/activity_margin_120dp"
+        android:padding="@dimen/activity_margin_5dp" />
+
+    <LinearLayout
+        android:id="@+id/fileNameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/txtFileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_margin_5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_16sp"
+            android:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/mAudioSeek"
+            android:layout_width="@dimen/activity_margin_120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_5dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/seekBarHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_10sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>
