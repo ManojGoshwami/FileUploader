@@ -95,6 +95,7 @@
 
 
             </LinearLayout>
+
             <ImageView
                 android:layout_width="@dimen/activity_margin_30dp"
                 android:layout_height="@dimen/activity_margin_30dp"
@@ -135,6 +136,7 @@
                     android:text="Update Floor"
                     android:textColor="@color/color_1B1B47"
                     android:textSize="@dimen/text_size_14sp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -146,6 +148,7 @@
 
 
             </LinearLayout>
+
             <ImageView
                 android:layout_width="@dimen/activity_margin_30dp"
                 android:layout_height="@dimen/activity_margin_30dp"
@@ -158,16 +161,18 @@
             android:id="@+id/lyt_location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/lyt_rounded"
             android:layout_marginTop="@dimen/activity_margin_10dp"
             android:layout_marginBottom="@dimen/activity_margin_10dp"
+            android:background="@drawable/lyt_rounded"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:weightSum="2"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:weightSum="2">
+
                 <EditText
                     android:id="@+id/edtHomeUID"
                     android:layout_width="match_parent"
@@ -175,26 +180,28 @@
                     android:layout_marginStart="@dimen/activity_margin_10dp"
                     android:layout_marginTop="@dimen/activity_margin_10dp"
                     android:layout_marginEnd="@dimen/activity_margin_10dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="@dimen/activity_margin_10dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
                     android:gravity="center"
                     android:hint="Enter UID"
-                    android:background="@color/white"
-                    android:textColorHint="@color/black"
                     android:inputType="number"
                     android:maxLength="7"
+                    android:textColorHint="@color/black"
                     android:textSize="@dimen/text_size_16sp" />
+
                 <Spinner
                     android:id="@+id/ulb_drop_spinner"
-                    android:layout_weight="1"
                     style="@style/Widget.AppCompat.DropDownItem.Spinner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:entries="@array/ulb_list"
+                    android:layout_weight="1"
                     android:backgroundTint="@color/colorPrimary"
+                    android:entries="@array/ulb_list"
                     tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -235,6 +242,7 @@
 
 
                 </LinearLayout>
+
                 <ImageView
                     android:id="@+id/imgLocationArrow"
                     android:layout_width="@dimen/activity_margin_30dp"
@@ -247,7 +255,6 @@
 
 
         </LinearLayout>
-
 
 
     </LinearLayout>
